@@ -1,9 +1,9 @@
 segment .text
-    global _start
+    global _start ;中华人民共和国
 
 
 _start:
-    mov edx, len
+    mov edx, len 
     mov ecx, msg
     mov ebx, 1
     mov eax, 4
@@ -14,5 +14,5 @@ _start:
 
 
 segment .data
-msg db 'hello world'
+msg db 'hello world',13,10
 len equ $-msg
